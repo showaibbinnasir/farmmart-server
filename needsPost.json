@@ -1,0 +1,34 @@
+[
+    {
+        "postId": "01",
+        "type": "medicine",
+        "animal": "cow",
+        "title": "medicine for cow",
+        "company": "xyz ltd.",
+        "expdate": "01-02-2024",
+        "sellerName": "Showaib",
+        "seller_Email": "Showaib@gmail.com",
+        "sellerImage": "image.png",
+        "price": 145,
+        "description": "Lorem ipsum",
+        "reviews": ["review1","review2"],
+        "images": ["image1.png","image2.png", "image3.png"],
+        "status": false
+    },
+    {
+        "postId": "02",
+        "type": "medicine",
+        "animal": "goat",
+        "title": "medicine for goat",
+        "company": "xyz ltd.",
+        "expdate": "01-02-2024",
+        "sellerName": "Showaib",
+        "seller_Email": "Showaib@gmail.com",
+        "sellerImage": "image.png",
+        "price": 145,
+        "description": "Lorem ipsum",
+        "reviews": ["review1","review2"],
+        "images": ["image1.png","image2.png", "image3.png"],
+        "status": false
+    }
+]
