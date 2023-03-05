@@ -1,0 +1,21 @@
+[   {
+        "_id": "001",
+        "sellerId": "01",
+        "sellerName": "Sajib",
+        "sellerEmail": "sajib@gmail.com",
+        "sellerPhone": "01880614408",
+        "sellerImage": "image.png",
+        "sellerLocation": "Chittagong",
+        "status": true
+    },
+    {
+        "_id": "002",
+        "sellerId": "02",
+        "sellerName": "showaib",
+        "sellerEmail": "sajib@gmail.com",
+        "sellerPhone": "01880614408",
+        "sellerImage": "image.png",
+        "sellerLocation": "Chittagong",
+        "status": true
+    }
+]
