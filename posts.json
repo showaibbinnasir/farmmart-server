@@ -1,25 +1,140 @@
 [
     {
-	"postId": "01",
-	"animal": "cow",
-	"title": "Australian cow",
-	"color": "white and black",
-	"uploadDate": "01-02-2023",
-	"sellerLocation": "chittagong",
-	"sellerName": "Sajib ahmed",
-	"sellerEmail": "sajib@gmail.com",
-	"sellerImage": "image.png",
-	"phone": "01880614408",
-	"price": 120000,
-	"description": "Lorem ipsum",
-	"reviews": ["review1", "review2"],
-	"images": ["image1.png","image2.png", "image3.png"],
-	"status": false
+        "postId": "01",
+        "animal": "cow",
+        "title": "Australian cow",
+        "color": "white and black",
+        "uploadDate": "01-02-2023",
+        "sellerLocation": "chittagong",
+        "sellerName": "Sajib ahmed",
+        "sellerEmail": "sajib@gmail.com",
+        "sellerImage": "image.png",
+        "phone": "01880614408",
+        "price": 120000,
+        "description": "Lorem ipsum",
+        "reviews": [
+            "review1",
+            "review2"
+        ],
+        "images": [
+            {
+                "original": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg",
+                "thumbnail": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg"
+            },
+            {
+                "original": "https://i.ibb.co/J7jcJRC/logo.png",
+                "thumbnail": "https://i.ibb.co/J7jcJRC/logo.png"
+            },
+            {
+                "original": "https://i.ibb.co/2dw710m/ca-cow-stock.webp",
+                "thumbnail": "https://i.ibb.co/2dw710m/ca-cow-stock.webp"
+            }
+        ],
+        "status": false
     },
     {
         "postId": "02",
         "animal": "Goat",
-        "title": "Australian goat",
+        "title": "Bangladeshi goat",
+        "color": "white and black",
+        "uploadDate": "01-02-2023",
+        "sellerLocation": "chittagong",
+        "sellerName": "Sajib ahmed",
+        "sellerEmail": "sajib@gmail.com",
+        "sellerImage": "image.png",
+        "phone": "01880614408",
+        "price": 50000,
+        "description": "Lorem ipsum",
+        "reviews": [
+            "review1",
+            "review2"
+        ],
+        "images": [
+            {
+                "original": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg",
+                "thumbnail": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg"
+            },
+            {
+                "original": "https://i.ibb.co/J7jcJRC/logo.png",
+                "thumbnail": "https://i.ibb.co/J7jcJRC/logo.png"
+            },
+            {
+                "original": "https://i.ibb.co/2dw710m/ca-cow-stock.webp",
+                "thumbnail": "https://i.ibb.co/2dw710m/ca-cow-stock.webp"
+            }
+        ],
+        "status": false
+    },
+    {
+        "postId": "03",
+        "animal": "duck",
+        "title": "Duck",
+        "color": "white and black",
+        "uploadDate": "01-02-2023",
+        "sellerLocation": "chittagong",
+        "sellerName": "Sajib ahmed",
+        "sellerEmail": "sajib@gmail.com",
+        "sellerImage": "image.png",
+        "phone": "01880614408",
+        "price": 1000,
+        "description": "Lorem ipsum",
+        "reviews": [
+            "review1",
+            "review2"
+        ],
+        "images": [
+            {
+                "original": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg",
+                "thumbnail": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg"
+            },
+            {
+                "original": "https://i.ibb.co/J7jcJRC/logo.png",
+                "thumbnail": "https://i.ibb.co/J7jcJRC/logo.png"
+            },
+            {
+                "original": "https://i.ibb.co/2dw710m/ca-cow-stock.webp",
+                "thumbnail": "https://i.ibb.co/2dw710m/ca-cow-stock.webp"
+            }
+        ],
+        "status": false
+    },
+    {
+        "postId": "04",
+        "animal": "cow",
+        "title": "Nepali cow",
+        "color": "white and black",
+        "uploadDate": "01-02-2023",
+        "sellerLocation": "chittagong",
+        "sellerName": "Sajib ahmed",
+        "sellerEmail": "sajib@gmail.com",
+        "sellerImage": "image.png",
+        "phone": "01880614408",
+        "price": 170000,
+        "description": "Lorem ipsum",
+        "reviews": [
+            "review1",
+            "review2"
+        ],
+        "images": [
+            {
+                "original": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg",
+                "thumbnail": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg"
+            },
+            {
+                "original": "https://i.ibb.co/J7jcJRC/logo.png",
+                "thumbnail": "https://i.ibb.co/J7jcJRC/logo.png"
+            },
+            {
+                "original": "https://i.ibb.co/2dw710m/ca-cow-stock.webp",
+                "thumbnail": "https://i.ibb.co/2dw710m/ca-cow-stock.webp"
+            }
+        ],
+        "status": false
+    },
+    {
+        "postId": "05",
+        "animal": "Goat",
+        "title": "Australian Goat",
         "color": "white and black",
         "uploadDate": "01-02-2023",
         "sellerLocation": "chittagong",
@@ -29,9 +144,123 @@
         "phone": "01880614408",
         "price": 20000,
         "description": "Lorem ipsum",
-        "reviews": ["review1", "review2"],
-        "images": ["image1.png","image2.png", "image3.png"],
+        "reviews": [
+            "review1",
+            "review2"
+        ],
+        "images": [
+            {
+                "original": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg",
+                "thumbnail": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg"
+            },
+            {
+                "original": "https://i.ibb.co/J7jcJRC/logo.png",
+                "thumbnail": "https://i.ibb.co/J7jcJRC/logo.png"
+            },
+            {
+                "original": "https://i.ibb.co/2dw710m/ca-cow-stock.webp",
+                "thumbnail": "https://i.ibb.co/2dw710m/ca-cow-stock.webp"
+            }
+        ],
+        "status": false
+    },
+    {
+        "postId": "06",
+        "animal": "Hen",
+        "title": "Bangladeshi hen",
+        "color": "white and black",
+        "uploadDate": "01-02-2023",
+        "sellerLocation": "chittagong",
+        "sellerName": "Sajib ahmed",
+        "sellerEmail": "sajib@gmail.com",
+        "sellerImage": "image.png",
+        "phone": "01880614408",
+        "price": 600,
+        "description": "Lorem ipsum",
+        "reviews": [
+            "review1",
+            "review2"
+        ],
+        "images": [
+            {
+                "original": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg",
+                "thumbnail": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg"
+            },
+            {
+                "original": "https://i.ibb.co/J7jcJRC/logo.png",
+                "thumbnail": "https://i.ibb.co/J7jcJRC/logo.png"
+            },
+            {
+                "original": "https://i.ibb.co/2dw710m/ca-cow-stock.webp",
+                "thumbnail": "https://i.ibb.co/2dw710m/ca-cow-stock.webp"
+            }
+        ],
+        "status": false
+    },
+    {
+        "postId": "07",
+        "animal": "Goat",
+        "title": "Australian Goat",
+        "color": "white and black",
+        "uploadDate": "01-02-2023",
+        "sellerLocation": "chittagong",
+        "sellerName": "Sajib ahmed",
+        "sellerEmail": "sajib@gmail.com",
+        "sellerImage": "image.png",
+        "phone": "01880614408",
+        "price": 20000,
+        "description": "Lorem ipsum",
+        "reviews": [
+            "review1",
+            "review2"
+        ],
+        "images": [
+            {
+                "original": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg",
+                "thumbnail": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg"
+            },
+            {
+                "original": "https://i.ibb.co/J7jcJRC/logo.png",
+                "thumbnail": "https://i.ibb.co/J7jcJRC/logo.png"
+            },
+            {
+                "original": "https://i.ibb.co/2dw710m/ca-cow-stock.webp",
+                "thumbnail": "https://i.ibb.co/2dw710m/ca-cow-stock.webp"
+            }
+        ],
+        "status": false
+    },
+    {
+        "postId": "08",
+        "animal": "cow",
+        "title": "Australian cow",
+        "color": "white and black",
+        "uploadDate": "01-02-2023",
+        "sellerLocation": "chittagong",
+        "sellerName": "Sajib ahmed",
+        "sellerEmail": "sajib@gmail.com",
+        "sellerImage": "image.png",
+        "phone": "01880614408",
+        "price": 120000,
+        "description": "Lorem ipsum",
+        "reviews": [
+            "review1",
+            "review2"
+        ],
+        "images": [
+            {
+                "original": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg",
+                "thumbnail": "https://i.ibb.co/frptNBv/Cow-female-black-white.jpg"
+            },
+            {
+                "original": "https://i.ibb.co/J7jcJRC/logo.png",
+                "thumbnail": "https://i.ibb.co/J7jcJRC/logo.png"
+            },
+            {
+                "original": "https://i.ibb.co/2dw710m/ca-cow-stock.webp",
+                "thumbnail": "https://i.ibb.co/2dw710m/ca-cow-stock.webp"
+            }
+        ],
         "status": false
     }
-    
 ]
