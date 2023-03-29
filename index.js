@@ -7,6 +7,7 @@ app.use(cors())
 app.use(express.json())
 
 
+
 const uri = "mongodb+srv://farmmart:5msudjZZgqYC06AT@myfirstdb.w4kvmll.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
@@ -14,10 +15,21 @@ async function run() {
     try{
         const all_animals = client.db('farmmart').collection('all_animals')
         app.get('/all_animals', async(req,res)=>{
-            const query = { }
+            const searchId = req.query.searchId;
+
+            let query = { }
+            if(searchId){
+                query = {title: {$regex:searchId, $options: '$i'}}
+            }
             const result = await all_animals.find(query).toArray()
             res.send(result)
         })
+
+        // app.get('/animals/:id', async(req,res)=>{
+        //     const searchData = req.params.id;
+        //     const result = await all_animals.find({title: {$regex:searchData, $options: '$i'}}).toArray()
+        //     res.send(result)
+        // })
 
         app.get('/three_cow', async(req,res)=>{
             const query = { animal : 'cow'}
