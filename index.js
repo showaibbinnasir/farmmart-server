@@ -14,6 +14,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run() {
     try{
         const all_animals = client.db('farmmart').collection('all_animals')
+        const all_needs = client.db('farmmart').collection('all_needs')
         app.get('/all_animals', async(req,res)=>{
             const searchId = req.query.searchId;
 
@@ -61,6 +62,17 @@ async function run() {
             const query = { _id : new ObjectId(id) }
             
             const result = await all_animals.find(query).toArray()
+            res.send(result)
+        })
+
+        app.get('/all_needs', async(req,res)=>{
+            const searchId = req.query.searchId;
+
+            let query = { }
+            if(searchId){
+                query = {title: {$regex:searchId, $options: '$i'}}
+            }
+            const result = await all_needs.find(query).toArray()
             res.send(result)
         })
         

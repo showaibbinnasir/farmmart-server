@@ -8,11 +8,27 @@
         "expdate": "01-02-2024",
         "sellerName": "Showaib",
         "seller_Email": "Showaib@gmail.com",
-        "sellerImage": "image.png",
+        "sellerImage": "https://i.ibb.co/88TfKfF/276243945-1863658287178595-9034923214130519262-n-modified.png",
         "price": 145,
         "description": "Lorem ipsum",
-        "reviews": ["review1","review2"],
-        "images": ["image1.png","image2.png", "image3.png"],
+        "reviews": [
+            "review1",
+            "review2"
+        ],
+        "images": [
+            {
+                "original": "https://i.ibb.co/4KLkDcN/10-plastic-capsule-bottle-mockup-0.jpg",
+                "thumbnail": "https://i.ibb.co/4KLkDcN/10-plastic-capsule-bottle-mockup-0.jpg"
+            },
+            {
+                "original": "https://i.ibb.co/rx4W5zZ/nutritional-requirements-for-goats-removebg-preview.png",
+                "thumbnail": "https://i.ibb.co/rx4W5zZ/nutritional-requirements-for-goats-removebg-preview.png"
+            },
+            {
+                "original": "https://i.ibb.co/Kj8n7FM/nutritional-requirements-for-goats.jpg",
+                "thumbnail": "https://i.ibb.co/Kj8n7FM/nutritional-requirements-for-goats.jpg"
+            }
+        ],
         "status": false
     },
     {
@@ -24,11 +40,59 @@
         "expdate": "01-02-2024",
         "sellerName": "Showaib",
         "seller_Email": "Showaib@gmail.com",
-        "sellerImage": "image.png",
+        "sellerImage": "https://i.ibb.co/88TfKfF/276243945-1863658287178595-9034923214130519262-n-modified.png",
         "price": 145,
         "description": "Lorem ipsum",
-        "reviews": ["review1","review2"],
-        "images": ["image1.png","image2.png", "image3.png"],
+        "reviews": [
+            "review1",
+            "review2"
+        ],
+        "images": [
+            {
+                "original": "https://i.ibb.co/4KLkDcN/10-plastic-capsule-bottle-mockup-0.jpg",
+                "thumbnail": "https://i.ibb.co/4KLkDcN/10-plastic-capsule-bottle-mockup-0.jpg"
+            },
+            {
+                "original": "https://i.ibb.co/rx4W5zZ/nutritional-requirements-for-goats-removebg-preview.png",
+                "thumbnail": "https://i.ibb.co/rx4W5zZ/nutritional-requirements-for-goats-removebg-preview.png"
+            },
+            {
+                "original": "https://i.ibb.co/Kj8n7FM/nutritional-requirements-for-goats.jpg",
+                "thumbnail": "https://i.ibb.co/Kj8n7FM/nutritional-requirements-for-goats.jpg"
+            }
+        ],
+        "status": false
+    },
+    {
+        "postId": "03",
+        "type": "medicine",
+        "animal": "cow",
+        "title": "medicine for cow",
+        "company": "xyz ltd.",
+        "expdate": "01-02-2024",
+        "sellerName": "Showaib",
+        "seller_Email": "Showaib@gmail.com",
+        "sellerImage": "https://i.ibb.co/88TfKfF/276243945-1863658287178595-9034923214130519262-n-modified.png",
+        "price": 145,
+        "description": "Lorem ipsum",
+        "reviews": [
+            "review1",
+            "review2"
+        ],
+        "images": [
+            {
+                "original": "https://i.ibb.co/4KLkDcN/10-plastic-capsule-bottle-mockup-0.jpg",
+                "thumbnail": "https://i.ibb.co/4KLkDcN/10-plastic-capsule-bottle-mockup-0.jpg"
+            },
+            {
+                "original": "https://i.ibb.co/rx4W5zZ/nutritional-requirements-for-goats-removebg-preview.png",
+                "thumbnail": "https://i.ibb.co/rx4W5zZ/nutritional-requirements-for-goats-removebg-preview.png"
+            },
+            {
+                "original": "https://i.ibb.co/Kj8n7FM/nutritional-requirements-for-goats.jpg",
+                "thumbnail": "https://i.ibb.co/Kj8n7FM/nutritional-requirements-for-goats.jpg"
+            }
+        ],
         "status": false
     }
 ]
