@@ -51,6 +51,11 @@ async function run() {
             const result = await all_animals.find(query).toArray()
             res.send(result)
         })
+        app.get('/three_duck', async(req,res)=>{
+            const query = { animal : 'duck'}
+            const result = await all_animals.find(query).toArray()
+            res.send(result)
+        })
         app.get('/product/:id', async(req,res)=>{
             const id = req.params.id;
             const query = { _id : new ObjectId(id) }
