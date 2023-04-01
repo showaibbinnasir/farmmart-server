@@ -16,6 +16,7 @@ async function run() {
         const all_animals = client.db('farmmart').collection('all_animals')
         const all_needs = client.db('farmmart').collection('all_needs')
         const all_users = client.db('farmmart').collection('users')
+        const all_orders = client.db('farmmart').collection('orders')
         app.get('/all_animals', async(req,res)=>{
             const searchId = req.query.searchId;
 
@@ -92,10 +93,24 @@ async function run() {
             const result = await all_users.find(query).toArray()
             res.send(result)
         })
+        app.get('/orders', async(req,res)=>{
+            const email = req.query.email;
+            let query = {}
+            if(email){
+                query = {buyerEmail : email}
+            }
+            const result = await all_orders.find(query).toArray()
+            res.send(result)
+        })
 
         app.post('/all_users', async(req,res)=>{
             const newUser = req.body;
             const result = await all_users.insertOne(newUser)
+            res.send(result)
+        })
+        app.post('/orders', async(req,res)=>{
+            const newOrders = req.body;
+            const result = await all_orders.insertOne(newOrders)
             res.send(result)
         })
         
