@@ -95,6 +95,16 @@ async function run() {
             const result = await all_needs.find(query).toArray()
             res.send(result)
         })
+        app.get('/all_needs', async(req,res)=>{
+            const searchEmail = req.query.email;
+
+            let query = { }
+            if(searchId){
+                query = {seller_Email : searchEmail}
+            }
+            const result = await all_needs.find(query).toArray()
+            res.send(result)
+        })
         app.get('/all_users', async(req,res)=>{
             const email = req.query.email;
             let query = {}
@@ -135,6 +145,23 @@ async function run() {
             const result = await all_orders.insertOne(newOrders)
             res.send(result)
         })
+
+        app.delete('/all_needs/:id', async(req,res)=> {
+            
+                const data = req.params.id;
+                const query = { _id: new ObjectId(data) };
+                const result = await all_needs.deleteOne(query);
+                res.send(result)
+            
+        })
+        app.delete('/all_animals/:id', async(req,res)=> {
+            
+            const data = req.params.id;
+            const query = { _id: new ObjectId(data) };
+            const result = await all_animals.deleteOne(query);
+            res.send(result)
+        
+    })
         
     }
     finally{
