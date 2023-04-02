@@ -125,6 +125,11 @@ async function run() {
             const result = await all_animals.insertOne(newPost)
             res.send(result)
         })
+        app.post('/all_needs', async(req,res)=>{
+            const newPost = req.body;
+            const result = await all_needs.insertOne(newPost)
+            res.send(result)
+        })
         app.post('/orders', async(req,res)=>{
             const newOrders = req.body;
             const result = await all_orders.insertOne(newOrders)
