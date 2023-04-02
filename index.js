@@ -27,6 +27,7 @@ async function run() {
             const result = await all_animals.find(query).toArray()
             res.send(result)
         })
+        
 
         // app.get('/animals/:id', async(req,res)=>{
         //     const searchData = req.params.id;
@@ -95,16 +96,27 @@ async function run() {
             const result = await all_needs.find(query).toArray()
             res.send(result)
         })
-        app.get('/all_needs', async(req,res)=>{
+        app.get('/all_needstwo', async(req,res)=>{
             const searchEmail = req.query.email;
 
             let query = { }
-            if(searchId){
+            if(searchEmail){
                 query = {seller_Email : searchEmail}
             }
             const result = await all_needs.find(query).toArray()
             res.send(result)
         })
+        app.get('/all_animalstwo', async(req,res)=>{
+            const searchEmail = req.query.email;
+
+            let query = { }
+            if(searchEmail){
+                query = {sellerEmail : searchEmail}
+            }
+            const result = await all_animals.find(query).toArray()
+            res.send(result)
+        })
+        
         app.get('/all_users', async(req,res)=>{
             const email = req.query.email;
             let query = {}
