@@ -35,12 +35,12 @@ async function run() {
         // })
 
         app.get('/three_cow', async(req,res)=>{
-            const query = { animal : 'cow'}
+            const query = { animal : 'Cow'}
             const result = await all_animals.find(query).limit(3).toArray()
             res.send(result)
         })
         app.get('/all_cow', async(req,res)=>{
-            const query = { animal : 'cow'}
+            const query = { animal : 'Cow'}
             const result = await all_animals.find(query).toArray()
             res.send(result)
         })
@@ -57,6 +57,17 @@ async function run() {
         app.get('/three_duck', async(req,res)=>{
             const query = { animal : 'duck'}
             const result = await all_animals.find(query).toArray()
+            res.send(result)
+        })
+        app.get('/three_needs', async(req,res)=>{
+            const data = req.query.animal;
+            let query = {}
+            if(data) {
+                query = {
+                    animal : data
+                }
+            }
+            const result = await all_needs.find(query).toArray();
             res.send(result)
         })
         app.get('/product/:id', async(req,res)=>{
@@ -106,6 +117,12 @@ async function run() {
         app.post('/all_users', async(req,res)=>{
             const newUser = req.body;
             const result = await all_users.insertOne(newUser)
+            res.send(result)
+        })
+
+        app.post('/all_animals', async(req,res)=>{
+            const newPost = req.body;
+            const result = await all_animals.insertOne(newPost)
             res.send(result)
         })
         app.post('/orders', async(req,res)=>{
