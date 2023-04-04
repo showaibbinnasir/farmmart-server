@@ -56,7 +56,12 @@ async function run() {
             res.send(result)
         })
         app.get('/three_duck', async (req, res) => {
-            const query = { animal: 'duck' }
+            const query = { animal: 'Duck' }
+            const result = await all_animals.find(query).toArray()
+            res.send(result)
+        })
+        app.get('/three_hen', async (req, res) => {
+            const query = { animal: 'Hen' }
             const result = await all_animals.find(query).toArray()
             res.send(result)
         })
