@@ -202,6 +202,32 @@ async function run() {
             const result = await all_animals.updateOne(filter, updatedUser, option);
             res.send(result);
         })
+        app.put('/orders/update/:id', async (req, res) => {
+            const id = req.params.id;
+            const filter = { _id: new ObjectId(id) }
+            const user = req.body;
+            const option = { upsert: true }
+            const updatedUser = {
+                $set: {
+                    status: user.verification,
+                }
+            }
+            const result = await all_orders.updateOne(filter, updatedUser, option);
+            res.send(result);
+        })
+        app.put('/orders/updatesellinfo/:id', async (req, res) => {
+            const id = req.params.id;
+            const filter = { _id: new ObjectId(id) }
+            const user = req.body;
+            const option = { upsert: true }
+            const updatedUser = {
+                $set: {
+                    sellInfo: user.verification,
+                }
+            }
+            const result = await all_orders.updateOne(filter, updatedUser, option);
+            res.send(result);
+        })
 
         app.delete('/all_needs/:id', async (req, res) => {
 
